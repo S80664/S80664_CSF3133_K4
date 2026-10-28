@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Majlis Anugerah Dekan FSKM UMT 2026</title>
+</head>
+<body>
+
+    <!-- 1. Semantic Structure -->
+    <header>
+        <h1>Majlis Anugerah Dekan FSKM 2026</h1>
+        <p>Universiti Malaysia Terengganu (UMT)</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Maklumat Tentang Program</a></li>
+            <li><a href="#schedule">Jadual Program</a></li>
+            <li><a href="#register">RSVP & Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Element-->
+    <section id="about">
+        <h2>Maklumat Tentang Program</h2>
+        <p>Majlis Anugerah Dekan FSKM 2026 adalah sebuah program untuk menyambut dan menghargai pencapaian pelajar yang mendapat keputusan cemerlang di semester 25/2026 di dalam Fakulti Sains & Matematik.</p>
+        
+        <article>
+            <h3>Tetamu Terhormat: Dekan FSKM</h3>
+            <p>Ucapan inspirasi oleh Dekan FSKM, menghargai dedikasi, ketahanan, dan usaha gigih pelajar cemerlang.</p>
+        </article>
+
+        <article>
+            <h3>Acara Tumpuan</h3>
+            <p>Penyampaian sijil Anugerah Dekan, Anugerah Khas Fakulti, dan sesi bergambar untuk mengabadikan kenangan bermakna.</p>
+        </article>
+    </section>
+
+    <!-- EVENT SCHEDULE  -->
+    <section id="schedule">
+        <h2>JADUAL PROGRAM</h2>
+        <p>Tentatif: Sabtu, 31 October 2026 di Dewan Syed Jalaluddin (DSJ), FSKM, UMT.</p>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Masa</th>
+                    <th>Activiti</th>
+                    <th>Tempat</th>
+                    <th>Orang yang bertugas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 AM - 09:00 AM</td>
+                    <td>Ketibaan Pelajar & Pendaftaran</td>
+                    <td>Dewan Syed Jalaluddin (DSJ)</td>
+                    <td>Urusetia Pendaftaran</td>
+                </tr>
+                <tr>
+                    <td>09:00 AM - 09:30 AM</td>
+                    <td>Ketibaan VIP dan Nyanyian Lagu(Negaraku)</td>
+                    <td rowspan="2">Dewan Syed Jalaluddin (DSJ), FSKM, UMT</td>
+                    <td>Jawatankuasa Protokol</td>
+                </tr>
+                <tr>
+                    <td>09:30 AM - 10:15 AM</td>
+                    <td>Ucapan Aluan & Pembukaan oleh Dekan FSKM</td>
+                    <td>Dekan FSKM</td>
+                </tr>
+                <tr>
+                    <td>10:15 AM - 12:00 PM</td>
+                    <td colspan="3">Sesi 1 & 2: Penyampaian Sijil Anugerah Dekan & Montaj</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM - 12:30 PM</td>
+                    <td>Ucapan Penutup & Sesi Bergambar</td>
+                    <td>Dewan Syed Jalaluddin (DSJ), FSKM, UMT</td>
+                    <td>Pasukan Media & Publisiti</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Majlis Bersurai</td>
+                    <td>Main Hall Exit</td>
+                    <td>Semua Jawatankuasa</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- Form Registration -->
+    <section id="register">
+        <h2>Borang RSVP & Pengesahan Kehadiran</h2>
+        <p>Sila sahkan kehadiran anda sebelum 20/10/2026. Tiada kemasukan "walk-in" dibenarkan.</p>
+        
+        <form action="register.html" method="post">
+            <div>
+                <label for="NamaPenuh">Nama Penuh:</label><br>
+                <input type="text" id="NamaPenuh" name="NamaPenuh" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="matric">Nombor Matrik:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="email">E-mel:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+
+            <div>
+                <label>Tahun Pengajian:</label><br>
+                <input type="radio" id="year1" name="TahunPengajian" value="Tahun 1">
+                <label for="year1">Tahun 1</label><br>
+                
+                <input type="radio" id="year2" name="TahunPengajian" value="Tahun 2">
+                <label for="year2">Tahun 2</label><br>
+                
+                <input type="radio" id="year3" name="TahunPengajian" value="Tahun 3">
+                <label for="year3">Tahun 3</label><br>
+                
+                <input type="radio" id="year4" name="TahunPengajian" value="Tahun 4">
+                <label for="year4">Tahun 4</label>
+            </div>
+            <br>
+            <div>
+                <label>Pilihan Pengesahan Kehadiran (atleast 3):</label><br>
+                <input type="checkbox" id="attend" name="sessions" value="Hadir Fizikal">
+                <label for="attend">Hadir Fizikal di DSJ</label><br>
+                
+                <input type="checkbox" id="cert" name="sessions" value="E-Sijil">
+                <label for="cert">Terima E-Sijil melalui E-mel</label><br>
+                
+                <input type="checkbox" id="photo" name="sessions" value="Sesi Bergambar">
+                <label for="photo">Sertai Sesi Bergambar Rasmi di Pentas</label><br>
+                
+                <input type="checkbox" id="meal" name="sessions" value="Cenderahati">
+                <label for="meal">Tuntut Pek Makanan/Cenderahati Selepas Majlis</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="program">Program atau Fakulti:</label><br>
+                <select id="program" name="program">
+                    <option value="" disabled selected>-- Pilih Program FSKM Anda --</option>
+                    <option value="Sarjana Muda Sains Komputer (Kejuruteraan Perisian)">Sarjana Muda Sains Komputer (Kejuruteraan Perisian) dengan Kepujian</option>
+                    <option value="Sarjana Muda Sains Komputer (Pengkomputeran Mudah Alih)">Sarjana Muda Sains Komputer (Pengkomputeran Mudah Alih) dengan Kepujian</option>
+                    <option value="Sarjana Muda Sains (Matematik Kewangan)">Sarjana Muda Sains (Matematik Kewangan) dengan Kepujian</option>
+                    <option value="Sarjana Muda Sains (Data Analitik)">Sarjana Muda Sains (Data Analitik) dengan Kepujian</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Hantar RSVP</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <p>Anjuran: Fakulti Sains Komputer dan Matematik (FSKM), Universiti Malaysia Terengganu (UMT)</p>
+        <p>&copy; 2026 Majlis Anugerah Dekan FSKM. Hak cipta terpelihara.</p>
+    </footer>
+</body>
+</html>
