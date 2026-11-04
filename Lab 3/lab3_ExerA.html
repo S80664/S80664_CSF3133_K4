@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Berry's Campus Bakery - Online Order Page</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Berry's Campus Bakery <span>- Freshly Baked Daily for Students & Staff</span></h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+        <a href="#content">Home</a> | 
+        <a href="#sidebar">Price List</a> | 
+        <a href="#order-form">Order Form</a>
+    </div>
+
+    <!-- Content Section -->
+    <div id="content">
+        <h2>Welcome to Berry's Campus Bakery!</h2>
+        <p>
+           Welcome to <strong>Berry's Campus Bakery</strong>! We provide a variety of freshly baked pastries and cakes specially for <em>campus residents</em>. Please visit our <a href="https://www.berrys.com.my/index.html">official social media page</a> for any further inquiries or proceed to make your order below.
+        </p>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <h3>Price List &amp; Promotions</h3>
+        <ul>
+            <li>Berry's Bake&reg; Cupcakes - RM 3.00 each</li>
+            <li>Berry's Bake&reg; Cake Slices - RM 5.00 each</li>
+            <li>Special Offer: Orders &gt; 10 pieces get a free drink!</li>
+        </ul>
+    </div>
+
+    <!-- Order Form Section -->
+    <div id="order-form">
+        <h3>Online Order Form</h3>
+        
+        <form oninput="total.value = (parseInt(cupcakes.value) * 3) + (parseInt(cakeslices.value) * 5)">
+            <p>
+                <label for="fullname">Customer Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" autofocus required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="012-3456789" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </p>
+
+            <p>
+                <label for="pickdate">Pick-up Date:</label><br>
+                <input type="date" id="pickdate" name="pickdate">
+            </p>
+
+            <p>
+                <label for="picktime">Pick-up Time:</label><br>
+                <input type="time" id="picktime" name="picktime">
+            </p>
+
+            <p>
+                <label for="flavour">Select Flavour:</label><br>
+                <input list="flavours" id="flavour" name="flavour" placeholder="Choose or type a flavour">
+                <datalist id="flavours">
+                    <option value="Chocolate Fudge">
+                    <option value="Red Velvet">
+                    <option value="Vanilla Bean">
+                    <option value="Pandan Gula Melaka">
+                    <option value="Strawberry">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="icing">Icing Colour:</label><br>
+                <input type="color" id="icing" name="icing" value="#ff0000">
+            </p>
+
+            <p>
+                <label for="sweetness">Sweetness Level (1-5):</label><br>
+                <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value="3">
+            </p>
+
+            <h4>Price Calculator</h4>
+            <p>
+                <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+            </p>
+
+            <p>
+                <label for="cakeslices">Cake Slices (RM 5.00 each):</label><br>
+                <input type="number" id="cakeslices" name="cakeslices" min="0" value="0">
+            </p>
+
+            <p>
+                <strong>Total Price (RM): </strong>
+                <output name="total" for="cupcakes cakeslices">0</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit Order">
+            </p>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 Berry's Campus Bakery. All rights reserved.</p>
+        
+        <!-- Testing Observations -->
+        <!-- Testing Observations:
+            - Clicking Submit with all fields empty triggers HTML5 validation alerts on required fields (name, phone, email).
+            - Entering "myemail" into the e-mail field correctly triggers an invalid email format warning upon submission.
+            - HTML5 inputs (date, time, color, range, tel, email) and datalist render proper UI controls.
+            - Price calculation updates instantly in real-time using the <output> element and form oninput handler.
+            - HTML entities (&amp;, &reg;, &gt;, &copy;) display correctly. -->
+    </div>
+
+</body>
+</html>
