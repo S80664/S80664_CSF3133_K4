@@ -1,0 +1,101 @@
+/* 5 */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1A5276;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Susunan LVHA dengan selector lebih spesifik */
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color: #F1C40F; /* Warna kuning terang selepas ditekan */
+}
+
+nav ul li a:hover {
+    background-color: #E67E22;
+    color: white;
+}
+
+nav ul li a:active {
+    color: #C0392B;
+}
+
+/* 6 */
+h1 {
+    text-decoration: overline;
+    text-align: center;
+    color: #1A5276;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 8px;
+}
+
+/* 7 */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* 8 */
+.feedback-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px dashed #1A5276;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* 9 */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #F39C12;
+}
+
+section {
+    padding: 20px;
+    margin: 15px auto;
+    width: 90%;
+    background-color: white;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!-- 2 -->
+    <!-- 
+    Error 1 (Line 9): 'list-style-type: no;' is invalid CSS syntax. Corrected to 'none'.
+    Error 2 (Line 14-15): Incorrect pseudo-class order for links. Corrected to LVHA order (link, visited, hover, active).
+    Error 3 (Line 17): 'text-decoration: overlined;' is invalid. Corrected to 'overline'.
+    Error 4 (Line 22): Missing dot '.' for class selector 'highlight'. Corrected to '.highlight'.
+    Error 5 (Line 34): '<a href="menu">' missing '#' for internal section link. Corrected to 'href="#menu"'.
+    Error 6 (Line 42 & 46): Duplicate id="item" used. Changed to class="item" as IDs must be unique.
+    Error 7 (Line 54): 'type="mp4"' is invalid MIME type. Corrected to 'type="video/mp4"'.
+    Error 8 (Line 4): Missing viewport meta tag for responsive design. Added <meta name="viewport">.
+    -->
+
+<head>
+    <meta charset="utf-8">
+    <title>e-Café Campus</title>
+    
+    <!-- 5 -->
+    <link rel="stylesheet" href="cafe.css">
+    
+    <!-- 7 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        #intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 10px;
+        }
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- 5 -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 6 -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p id="intro">Freshly brewed coffee and local delights every day.</p>
+
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>Only <span class="old-price">RM 4.50</span> <span class="highlight">RM 3.50</span></p>
+        </article>
+
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="old-price">RM 6.50</span> <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+
+    <!-- 7 -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Behind the scenes at e-Café Campus.</figcaption>
+        </figure>
+    </section>
+
+    <!-- 8 -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+        <form class="feedback-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <p>Visit Type:</p>
+            <input type="radio" id="dine-in" name="visit" value="Dine-in">
+            <label for="dine-in">Dine-in</label><br>
+            <input type="radio" id="take-away" name="visit" value="Take-away">
+            <label for="take-away">Take-away</label><br><br>
+
+            <p>Favourite Items:</p>
+            <input type="checkbox" id="coffee" name="fav" value="Coffee">
+            <label for="coffee">Coffee</label><br>
+            <input type="checkbox" id="nasilemak" name="fav" value="Nasi Lemak">
+            <label for="nasilemak">Nasi Lemak</label><br>
+            <input type="checkbox" id="pastry" name="fav" value="Pastry">
+            <label for="pastry">Pastry</label><br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <!-- 9 -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+        <address>
+            Contact us: <a href="mailto:info@ecafecampus.com">info@ecafecampus.com</a>
+        </address>
+    </footer>
+</body>
+</html>
