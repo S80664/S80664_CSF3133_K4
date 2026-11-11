@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <!-- 1. HTML5 Page Structure: Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu 2026</title>
+
+    <!-- 4. CSS Styling: Link external CSS & Internal CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Header -->
+    <header>
+        <h1>Lets Visit Terengganu</h1>
+    </header>
+
+    <!-- 2. Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Promo Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. Section 1: Destinations (Ditambah tag pembuka <section id="destinations">) -->
+    <section id="destinations">
+        <h2>Destinations</h2>
+
+        <!-- 1. Ditambah elemen meter yang terlepas -->
+        <p>Trip Seats Filled:</p>
+        <meter min="0" max="40" value="28">28 out of 40</meter>
+
+        <article class="card">
+            <h3>Perhentian Island</h3>
+            <p>Experience crystal clear waters and white sandy beaches.</p>
+            <p>Price: <span class="old-price">RM 499</span> <span class="new-price">RM 299</span></p>
+        </article>
+
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>A paradise for diving and snorkeling enthusiasts.</p>
+            <p>Price: <span class="old-price">RM 450</span> <span class="new-price">RM 250</span></p>
+        </article>
+
+        <article class="card">
+            <h3>Kenyir Lake</h3>
+            <p>Explore the largest artificial lake in Southeast Asia.</p>
+            <p>Price: <span class="old-price">RM 200</span> <span class="new-price">RM 100</span></p>
+        </article>
+    </section>
+
+    <!-- 3. Section 2: Video -->
+    <section id="video" class="center-layout">
+        <h2>Promotional Video</h2>
+        <figure>
+            <video width="440" height="260" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Experience the Pulau Redang View</figcaption>
+        </figure>
+        <figure>
+            <video width="640" height="360" controls>
+                <source src="perhentian.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Discover our Pulau Perhentian.</figcaption>
+        </figure>
+        <figure>
+            <video width="640" height="360" controls>
+                <source src="tasik.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Fantastic view of Kenyir Lake.</figcaption>
+        </figure>
+    </section>
+
+    <!-- 7. Section 3: Trip -->
+    <section id="trip">
+        <h2>Trip Interest Form</h2>
+        <form class="trip-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+            
+            <p>Traveller Type:</p>
+            <input type="radio" id="student" name="type" value="student">
+            <label for="student">Student</label><br>
+            <input type="radio" id="staff" name="type" value="staff">
+            <label for="staff">Staff</label><br>
+            <input type="radio" id="public" name="type" value="public">
+            <label for="public">Public</label><br><br>
+
+            <p>Interests:</p>
+            <input type="checkbox" id="islands" name="interests" value="islands">
+            <label for="islands">Islands</label><br>
+            <input type="checkbox" id="food" name="interests" value="food">
+            <label for="food">Food</label><br>
+            <input type="checkbox" id="culture" name="interests" value="culture">
+            <label for="culture">Culture</label><br>
+            <input type="checkbox" id="nature" name="interests" value="nature">
+            <label for="nature">Nature</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- 1. Footer -->
+    <footer>
+        <p>&copy; 2026 Terengganu Tourism Board</p>
+        <address>
+            Contact us: <a href="mailto:info@terengganutourism.com">info@terengganutourism.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>

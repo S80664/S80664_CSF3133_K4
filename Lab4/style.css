@@ -1,0 +1,109 @@
+/* 2. Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    text-decoration: none; /* Remove underline */
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+/* 6. Interactive Link States */
+nav a:link {
+    color: white;
+}
+nav a:visited {
+    color: lightgray;
+}
+nav a:hover {
+    background-color: #555;
+    color: yellow;
+}
+nav a:active {
+    color: red;
+}
+
+/* 8. Responsive Design: Percentage widths */
+section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+/* 4. ID Selectors */
+#destinations {
+    border-top: 4px solid #004d99;
+}
+#video {
+    text-align: center;
+}
+
+/* 4. Class Selectors */
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+}
+.center-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 5. Text Decoration for Headings */
+h1 {
+    text-decoration: overline;
+}
+h2 {
+    text-decoration: underline;
+    color: #004d99;
+}
+
+/* 5. Text Decoration for Old/New Prices */
+.old-price {
+    text-decoration: line-through; /* Strikethrough for old price */
+    color: red;
+    margin-right: 10px;
+}
+.new-price {
+    font-weight: bold;
+    color: green;
+    font-size: 1.2em;
+}
+
+/* 7. Interactive Elements (Form Styling) */
+.trip-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border: 2px dotted #004d99;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 8. Responsive Design: Video Scaling */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+footer a {
+    color: #42a0c0;
+}
